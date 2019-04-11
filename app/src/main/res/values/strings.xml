@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MTG_LifeCounter</string>
+    <string name="player_life_DECREASE">Decrease</string>
+    <string name="player_life_INCREASE">Increase</string>
+    <string name="_20">20</string>
+</resources>
