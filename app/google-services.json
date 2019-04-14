@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "817543193526",
+    "firebase_url": "https://mtg-life-counter-11931.firebaseio.com",
+    "project_id": "mtg-life-counter-11931",
+    "storage_bucket": "mtg-life-counter-11931.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817543193526:android:9ec2d48fb3ad6108",
+        "android_client_info": {
+          "package_name": "com.example.yeti.mtg_lifecounter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817543193526-s6espsvfortbkc0joe1oi7q0eqo5l3if.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yeti.mtg_lifecounter",
+            "certificate_hash": "de5089a34f162e3f9f0fa5b2fd98b09e683e1530"
+          }
+        },
+        {
+          "client_id": "817543193526-qoagsptrl9vf37pohsfrsla69bg7f4d8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6dsYlfr8NyM9rG8vd_zH5D-cofKsbHYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "817543193526-qoagsptrl9vf37pohsfrsla69bg7f4d8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
