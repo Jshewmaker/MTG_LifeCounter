@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "817543193526-2nitl2i1rl3j89pnhvcaldg7309qc5vm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.yeti.mtg_lifecounter",
+            "certificate_hash": "93c57aedad4f4a2e63194f01a5734783911e1b57"
+          }
+        },
+        {
           "client_id": "817543193526-qoagsptrl9vf37pohsfrsla69bg7f4d8.apps.googleusercontent.com",
           "client_type": 3
         }
