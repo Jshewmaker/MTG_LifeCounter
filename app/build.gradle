@@ -34,6 +34,7 @@ dependencies {
     //adds google login
     implementation 'com.firebaseui:firebase-ui-auth:4.3.1'
     implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.android.support:design:28.0.0'
 
 }
 

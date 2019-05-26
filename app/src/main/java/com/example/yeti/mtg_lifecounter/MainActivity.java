@@ -15,11 +15,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     Player_1_Fragment player1Fragment;
     Player_2_Fragment player2Fragment;
+    private ImageButton menuButton;
+
 
 
     @Override
@@ -38,6 +43,17 @@ public class MainActivity extends AppCompatActivity {
         transaction.add(R.id.player2, player2Fragment);
 
         transaction.commit();
+
+        menuButton = findViewById(R.id.menubutton);
+        menuButton.setOnClickListener( new View.OnClickListener() {
+            public void onClick(View v){
+                Toast.makeText(getApplicationContext(), "Magic", Toast.LENGTH_LONG).show();
+            }
+
+        });
+
+
+
     }
 
     @Override
