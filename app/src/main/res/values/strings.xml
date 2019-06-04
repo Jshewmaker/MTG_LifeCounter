@@ -3,8 +3,11 @@
     <string name="player_life_DECREASE">Decrease</string>
     <string name="player_life_INCREASE">Increase</string>
     <string name="_20">20</string>
-    <string name="SIGN_OUt">Sign Out</string>
+    <string name="SIGN_OUT">Sign Out</string>
     <string name="DISCONNECT">Log Out</string>
+    <string name="Minimum">Minimum</string>
+    <string name="Maximum">Maximum</string>
+
 
     <string name="label_google_sign_in">Firebase + Google Sign In</string>
     <string name="desc_google_sign_in">Use a Google Sign In credential to authenticate with Firebase.</string>

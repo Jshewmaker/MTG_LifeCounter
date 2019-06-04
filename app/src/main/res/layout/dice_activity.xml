@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <TextView
+        android:id="@+id/tv_minimum"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/Minimum"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/min_subtraction_button"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="96dp"
+        android:background="#0000"
+        android:src="@drawable/ic_subtraction"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/min_dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/min_addition_button"
+        app:layout_constraintStart_toEndOf="@+id/min_subtraction_button"
+        app:layout_constraintTop_toBottomOf="@+id/tv_minimum" />
+
+    <ImageButton
+        android:id="@+id/min_addition_button"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="68dp"
+        android:background="#0000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_addition" />
+
+    <ImageButton
+        android:id="@+id/max_subtraction_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginBottom="96dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_subtraction"
+        android:background="@color/fui_transparent"/>
+
+    <ImageButton
+        android:id="@+id/max_addition_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="96dp"
+        android:background="@color/fui_transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_addition" />
+
+    <TextView
+        android:id="@+id/max_dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="6"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/Maximum"
+        app:layout_constraintEnd_toStartOf="@+id/max_addition_button"
+        app:layout_constraintStart_toEndOf="@+id/max_subtraction_button" />
+
+    <TextView
+        android:id="@+id/Maximum"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/Maximum"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
