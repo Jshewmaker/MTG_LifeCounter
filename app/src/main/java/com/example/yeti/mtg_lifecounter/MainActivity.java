@@ -7,6 +7,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -23,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
     Player_1_Fragment player1Fragment;
     Player_2_Fragment player2Fragment;
+    DiceFragment diceFragment;
     private ImageButton menuButton;
+    int player1_life, player2_life, diceLower, diceUpper;
 
 
 
@@ -31,30 +34,44 @@ public class MainActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.framelayout);
-
+        player1_life = 20;
+        player2_life = 20;
+        diceLower = 1;
+        diceUpper = 6;
         hideSystemUI();
 
         player1Fragment = new Player_1_Fragment();
         player2Fragment = new Player_2_Fragment();
+        diceFragment = new DiceFragment();
 
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
-        transaction.add(R.id.player1, player1Fragment);
-        transaction.add(R.id.player2, player2Fragment);
+
+
+
+        final FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
+        transaction.add(R.id.player1, player1Fragment, "player1");
+        transaction.add(R.id.player2, player2Fragment, "player2");
 
         transaction.commit();
 
         menuButton = findViewById(R.id.menubutton);
         menuButton.setOnClickListener( new View.OnClickListener() {
             public void onClick(View v){
-                Toast.makeText(getApplicationContext(), "Magic", Toast.LENGTH_LONG).show();
-            }
 
+                    FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+                    ft.add(R.id.player1,  diceFragment, "dice");
+                    ft.add(R.id.player2, new DiceOutPutFragment(), "diceOutput");
+                    ft.addToBackStack(null);
+                    ft.commit();
+
+            }
         });
 
 
 
-    }
+
+    }//end onCreate
 
     @Override
     protected void onResume() {

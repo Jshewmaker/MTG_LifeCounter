@@ -16,6 +16,7 @@ public class Player_2_Fragment extends Fragment {
     private Button btn_increase;
     private Button btn_decrease;
     private TextView tv_LifeTotal;
+    int currentTotal;
 
     @Nullable
     @Override
@@ -29,20 +30,20 @@ public class Player_2_Fragment extends Fragment {
         btn_increase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int currentTotal = Integer.valueOf((tv_LifeTotal.getText().toString()));
+                currentTotal = ((MainActivity)getActivity()).player2_life;
                 currentTotal += 1;
                 tv_LifeTotal.setText(Integer.toString(currentTotal));
-               // Toast.makeText(getActivity(), "Player 2 Increase",Toast.LENGTH_SHORT).show();
+                ((MainActivity)getActivity()).player2_life = currentTotal;
             }
         });
 
         btn_decrease.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int currentTotal = Integer.valueOf((tv_LifeTotal.getText().toString()));
+                currentTotal = ((MainActivity)getActivity()).player2_life;
                 currentTotal -= 1;
                 tv_LifeTotal.setText(Integer.toString(currentTotal));
-              //  Toast.makeText(getActivity(), "Player 2 Decrease",Toast.LENGTH_SHORT).show();
+                ((MainActivity)getActivity()).player2_life = currentTotal;
             }
         });
 

@@ -36,40 +36,41 @@ public class DiceFragment extends Fragment {
         b_min_subtraction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                lower_dice_value = Integer.valueOf((tv_min_Value.getText().toString()));
+                lower_dice_value = ((MainActivity)getActivity()).diceLower;
                 lower_dice_value -= 1;
                 tv_min_Value.setText(Integer.toString(lower_dice_value));
-                // Toast.makeText(getActivity(), "Player 1 Increase",Toast.LENGTH_SHORT).show();
+                ((MainActivity)getActivity()).diceLower = lower_dice_value;
             }
         });
 
         b_min_addition.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                lower_dice_value = Integer.valueOf((tv_min_Value.getText().toString()));
+                lower_dice_value = ((MainActivity)getActivity()).diceLower;
                 lower_dice_value += 1;
                 tv_min_Value.setText(Integer.toString(lower_dice_value));
-                // Toast.makeText(getActivity(), "Player 1 Increase",Toast.LENGTH_SHORT).show();
+                ((MainActivity)getActivity()).diceLower = lower_dice_value;
+
             }
         });
 
         b_max_subtraction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                upper_dice_value = Integer.valueOf((tv_max_Value.getText().toString()));
+                lower_dice_value = ((MainActivity)getActivity()).diceUpper;
                 upper_dice_value -= 1;
                 tv_max_Value.setText(Integer.toString(upper_dice_value));
-                // Toast.makeText(getActivity(), "Player 1 Increase",Toast.LENGTH_SHORT).show();
+                ((MainActivity)getActivity()).diceUpper = upper_dice_value;
             }
         });
 
         b_max_addition.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                upper_dice_value = Integer.valueOf((tv_max_Value.getText().toString()));
+                upper_dice_value = ((MainActivity)getActivity()).diceUpper;
                 upper_dice_value += 1;
                 tv_max_Value.setText(Integer.toString(upper_dice_value));
-                // Toast.makeText(getActivity(), "Player 1 Increase",Toast.LENGTH_SHORT).show();
+                ((MainActivity)getActivity()).diceUpper = upper_dice_value;
             }
         });
 
